@@ -1,0 +1,28 @@
+{
+  "name": "postcss-alter-selector",
+  "version": "0.0.1",
+  "description": "PostCSS plugin Alter selector for each rule",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "postcss-alter-selector"
+  ],
+  "author": "Sanjeeth Kumar <sanjithkumar017@gmail.com>",
+  "license": "MIT",
+  "repository": "sanjithkumar017/postcss-alter-selector",
+  "bugs": {
+    "url": "https://github.com/sanjithkumar017/postcss-alter-selector/issues"
+  },
+  "homepage": "https://github.com/sanjithkumar017/postcss-alter-selector",
+  "dependencies": {
+    "postcss": "^5.2.14"
+  },
+  "devDependencies": {
+    "ava": "^0.18.0",
+    "eslint": "^1.10.2"
+  },
+  "scripts": {
+    "test": "ava && eslint *.js"
+  }
+}
