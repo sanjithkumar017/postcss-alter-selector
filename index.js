@@ -21,8 +21,8 @@ module.exports = postcss.plugin('postcss-alter-selector', function (opts) {
                 }
 
                 // Remove selector html
-                if (selector.startsWith('html ')) {
-                    // remove string 'html '
+                if (selector.startsWith('html')) {
+                    // remove string 'html'
                     selector = selector.replace('html ', '');
                 }
 
