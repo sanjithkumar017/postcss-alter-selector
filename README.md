@@ -14,6 +14,14 @@
 .foo, .bar {
     /* Input example */
 }
+
+.foo .bar .baz {
+    /* Input example */
+}
+
+html .foo {
+    /* Input example */
+}
 ```
 
 ```css
@@ -23,6 +31,16 @@
 
 .selector .foo, .selector .bar {
   /* Output example */
+}
+
+.foo .bar .baz {
+    /* Output example */
+    /* More than 1 selectors are ignored */
+}
+
+.selector .foo {
+    /* Output example */
+    /* html tag is stripped out */
 }
 ```
 

@@ -25,6 +25,18 @@ test('Should not Alter if class is already there', t =>
   run(t, '.selector.example{ }', '.selector.example{ }', { selector })
 );
 
+test('Should ignore multiple selectors - tag', t =>
+  run(t, 'a .example{ }', 'a .example{ }', { selector })
+);
+
+test('Should ignore multiple selectors - class', t =>
+  run(t, '.some .example{ }', '.some .example{ }', { selector })
+);
+
+test('Should remove html tag', t =>
+  run(t, 'html .example{ }', '.selector .example{ }', { selector })
+);
+
 test('Skip keyframe rules', t =>
   run(t, '0%, from {} 100%, to {}', '0%, from {} 100%, to {}', { selector })
 );
